@@ -1,0 +1,92 @@
+.blok {
+  display: flex;
+}
+
+.block {
+  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #dfd5d5;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.linkCast,
+.linkReviews {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.linkCast:hover,
+.linkReviews:hover {
+  background-color: #f06595;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .linkCast,
+  .linkReviews {
+    padding: 8px 16px;
+  }
+}
+
+.goBackButton {
+  text-decoration: none;
+  background-color: #b4abab;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: rgba(16, 14, 14, 0.781);
+  font-weight: bold;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.goBackButton:hover {
+  transform: scale(1.05);
+  text-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.goBackButton {
+  background-color: #dfd5d5b5;
+}

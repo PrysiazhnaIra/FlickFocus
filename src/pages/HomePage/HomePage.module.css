@@ -1,0 +1,50 @@
+.container {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #dfd5d5b5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mainTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 4, 5rem;
+  font-weight: 700;
+  color: #5c5656;
+  background: linear-gradient(45deg, #ff6b6b, #f06595);
+  background-clip: text;
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.mainTitle:hover {
+  transform: scale(1.05);
+  text-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 2rem;
+    margin: 15px 0;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainTitle {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}

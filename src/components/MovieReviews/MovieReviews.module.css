@@ -1,0 +1,29 @@
+.container {
+  padding: 20px;
+}
+
+.review {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f5eeee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.author {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.content {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.noReviews {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #777;
+}

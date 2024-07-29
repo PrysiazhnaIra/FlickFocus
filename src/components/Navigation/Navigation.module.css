@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #dfd5d5b5;
+  margin-bottom: 20px;
+}
+
+.link {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(16, 14, 14, 0.781);
+  text-transform: uppercase;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.active {
+  color: rgb(134, 29, 29);
+}
+
+.link:hover {
+  transform: scale(1.05);
+  text-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
