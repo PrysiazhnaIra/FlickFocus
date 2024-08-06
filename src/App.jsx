@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation/Navigation";
 // import MovieReviews from "./components/MovieReviews/MovieReviews";
 // import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import "./App.css";
+import { Toaster } from "react-hot-toast";
 import { lazy, Suspense } from "react";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
@@ -24,17 +25,20 @@ function App() {
   return (
     <>
       <Navigation />
-      <Suspense fallback={<h2>LOADING YOUR COMPONENT!</h2>}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/movies" element={<MoviesPage />} />
-          <Route path="/movies/:movieId" element={<MovieDetailsPage />}>
-            <Route path="cast" element={<MovieCast />} />
-            <Route path="reviews" element={<MovieReviews />} />
-          </Route>
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </Suspense>
+      <div className="main-content">
+        <Suspense fallback={<h2>LOADING YOUR COMPONENT!</h2>}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/movies" element={<MoviesPage />} />
+            <Route path="/movies/:movieId" element={<MovieDetailsPage />}>
+              <Route path="cast" element={<MovieCast />} />
+              <Route path="reviews" element={<MovieReviews />} />
+            </Route>
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </Suspense>
+      </div>
+      <Toaster position="top-lef" reverseOrder={false} />
     </>
   );
 }

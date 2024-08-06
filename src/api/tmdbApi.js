@@ -12,9 +12,9 @@ const api = axios.create({
   },
 });
 
-export const fetchTrendingMovies = async () => {
+export const fetchTrendingMovies = async (page = 1) => {
   try {
-    const response = await api.get("/trending/movie/day");
+    const response = await api.get("/trending/movie/day", { params: { page } });
     return response.data.results;
   } catch (error) {
     console.error("Error fetching trending movies:", error);

@@ -48,3 +48,18 @@
     padding: 10px;
   }
 }
+
+.loadMoreButton {
+  margin-top: 20px;
+  background-color: #b4abab;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: rgba(16, 14, 14, 0.781);
+  font-weight: bold;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+.loadMoreButton:hover {
+  transform: scale(1.05);
+  text-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}

@@ -1,11 +1,17 @@
 .nav {
-  display: flex;
-  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
   gap: 30px;
+  display: flex;
+  justify-content: center;
   padding: 20px;
-  border-radius: 12px;
   background-color: #dfd5d5b5;
-  margin-bottom: 20px;
+  z-index: 1000;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .link {
