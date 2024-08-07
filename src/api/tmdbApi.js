@@ -22,10 +22,10 @@ export const fetchTrendingMovies = async (page = 1) => {
   }
 };
 
-export const searchMovies = async (query) => {
+export const searchMovies = async (query, page = 1) => {
   try {
     const response = await api.get("/search/movie", {
-      params: { query, include_adult: false, language: "en-US", page: 1 },
+      params: { query, include_adult: false, language: "en-US", page: page },
     });
     return response.data;
   } catch (error) {

@@ -4,7 +4,6 @@ import { getImageUrl } from "../../api/tmdbApi";
 
 export default function MovieList({ movies }) {
   const location = useLocation();
-  console.log(location);
 
   return (
     <ul className={css.list}>
